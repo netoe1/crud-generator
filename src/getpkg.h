@@ -31,3 +31,9 @@ void add_gitignore()
     fprintf(gitignore, "%s", "node_modules/");
     fclose(gitignore);
 }
+
+void initJson()
+{
+    const char *command = "npm init -y";
+    system(command);
+}
